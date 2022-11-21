@@ -25,5 +25,9 @@ const primerArray = ["suma", "resta", "multipilicación", "división" ];
 const count = primerArray.push("suma");
 console.log(count);
 console.log(arrayOperaciones)
+localStorage.setItem('operaciones', JSON.stringify(arrayOperaciones));
+const usuario = JSON.parse(localStorage.getItem('infoUsuario'));
+usuario.operaciones = arrayOperaciones;
+localStorage.setItem('infoUsuario', JSON.stringify(usuario));
 }
 

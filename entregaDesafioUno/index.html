@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora HTML</title>
+    <link rel="stylesheet" href="./index.html" />
     <script src="index.js" defer></script>
     <script src="usuarios.js"></script>
-    <script src="operacion.js" defer></script> 
+    <script src="operacion.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <style>
-    
-        body{
+        body {
             font-family: sans-serif;
             text-align: center;
         }
-        input{
+        input {
             display: block;
             margin: auto;
             margin-bottom: 15px;
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>INGRESA TUS DATOS</h2>
-        Nombre:<input type="text" name="nombre" id="nombre">
-        Apellido:<input type="text" name="apellido" id="apellido">
+    <label>Nombre:<input type="text" name="nombre" id="nombre" /></label>
+    <label>Apellido:<input type="text" name="apellido" id="apellido" /></label>
     <button id="ingresar" onclick="ingresar()">INGRESAR</button>
-   <h1>Calculadora</h1>
-    <input type="text" id="op1" placeholder="Operador 1">
-    <input type="text" id="operacion" placeholder="+, -, *, /">
-    <input type="text" id="op2" placeholder="Operador 2">
+    <h1>Calculadora</h1>
+    <input type="text" id="op1" placeholder="Operador 1" />
+    <input type="text" id="operacion" placeholder="+, -, *, /" />
+    <input type="text" id="op2" placeholder="Operador 2" />
     <button id="calcular">Calcular</button>
     <p id="resultado"></p>
-
-</body>
-
+  </body>
 </html>
